@@ -28,18 +28,26 @@ export function Navigation() {
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
-                {ROUTES.collections.label}
+                <Link href={ROUTES.collections.path} legacyBehavior passHref>
+                  {ROUTES.collections.label}
+                </Link>
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="flex flex-col gap-2 p-4">
                   <li>
-                    <Link href={ROUTES.collections.path}>Спортивная</Link>
+                    <Link href={ROUTES.collections.children.sport.path} legacyBehavior passHref>
+                      Спортивная
+                    </Link>
                   </li>
                   <li>
-                    <Link href={ROUTES.collections.path}>Junior</Link>
+                    <Link href={ROUTES.collections.children.junior.path} legacyBehavior passHref>
+                      Junior
+                    </Link>
                   </li>
                   <li>
-                    <Link href={ROUTES.collections.path}>Базовая</Link>
+                    <Link href={ROUTES.collections.children.base.path} legacyBehavior passHref>
+                      Базовая
+                    </Link>
                   </li>
                 </ul>
               </NavigationMenuContent>

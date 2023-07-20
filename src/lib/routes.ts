@@ -6,6 +6,20 @@ export const ROUTES = {
   collections: {
     path: '/collections',
     label: 'Коллекции',
+    children: {
+      sport: {
+        path: '/collections/sport',
+        label: 'Спортивная',
+      },
+      junior: {
+        path: '/collections/junior',
+        label: 'Junior',
+      },
+      base: {
+        path: '/collections/base',
+        label: 'Базовая',
+      },
+    },
   },
   clothes: {
     path: '/catalog',
