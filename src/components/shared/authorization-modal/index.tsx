@@ -16,7 +16,7 @@ export function AuthorizationModal() {
   return (
     <Portal.Root>
       <div className="absolute grid place-items-center top-0 left-0 right-0 h-[100vh]">
-        <div className="m-auto">Привет</div>
+        <div className="bg-white p-8 rounded-lg shadow">Какая-то форма</div>
       </div>
     </Portal.Root>
   );

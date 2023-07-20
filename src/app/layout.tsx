@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import { AuthorizationModal, Navigation } from '@/components/shared';
+import Cart from '@/components/shared/cart';
 
 import { Providers } from '@/lib/providers';
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Navigation />
           {children}
           <AuthorizationModal />
+          <Cart />
         </Providers>
       </body>
     </html>
